@@ -51,10 +51,8 @@
 ***** mruby倒せる人
       
 ** (PS. 会場質疑内容追加)
-   ruby2は、rubyが主、
-rubyからC言語ライブラリを呼ぶ
-   mrubyは、C言語が主、
-C言語アプリケーション等に組み込む
+   ruby2は、rubyが主、rubyからC言語ライブラリを呼ぶ
+   mrubyは、C言語が主、C言語アプリケーション等に組み込む
 
 ** mrubyのすべて
 
@@ -93,11 +91,15 @@ C言語アプリケーション等に組み込む
 
 * hello mirb world
   で、rubyだけで書いてみると
+  
 ** mirb（mruby版irb）で実効
+   
 * 関西Ruby会議05 
   2013年8月31日(土)
   
   たのCいmruby（決定）
+  
+
 * 終わりに
 ** 来週のruby関西は
 *** 組み込みとDiscoveryと私
