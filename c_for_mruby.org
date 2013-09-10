@@ -78,14 +78,15 @@
 
 * hello mruby world
    
-** 1st step
+** basic mruby hello world
+   
    #+BEGIN_COMMENT 会場口頭説明
    （時間がなくなってきたので、
    本家サイトのhelloworldサンプル実行して
    終わりたかったがemacs操作に失敗＞＜）
    #+END_COMMENT
    
-   hello world sample
+   [[./sample_hello_mruby/hello.c][hello world sample]]
 
    #+BEGIN_COMMENT 会場口頭説明
    （時間がなかったので、飛ばしたが
