@@ -1,0 +1,109 @@
+#+TITLE: mruby with C API 
+#+AUTHOR: murase_syuka
+#+EMAIL: murase_syuka+mruby@gmail.com
+
+* 関西Ruby会議05 
+  2013年8月31日(土)
+
+  たのしいmruby（仮）
+
+* お前、誰よ？
+
+** murase_syuka
+
+*** work
+     Android of Java on Linux of Driver of C
+
+*** cook
+    C++ from Exceptional C++
+    Ruby from Minami.rb
+    Debian from DebianKansai
+      
+*** hobby?
+    Blender with Python
+    + GIMP
+    + Inkscape
+
+*** info
+
++ blog:    http://d.hatena.ne.jp/murase_syuka/
++ twitter: https://twitter.com/#!/murase_syuka
++ gmail:   murase_syuka（ダミーです）+mruby@ジーメール.com
+
+* 最初に
+  
+** 目次
+   - what mruby
+   - hello mruby world
+     - 1st step
+     - ...
+     - nth step
+   - 終わり
+
+* what mruby
+
+  [[http://forum.mruby.org/][軽量Rubyフォーラム]]
+  [[https://github.com/mruby/mruby][github:mruby]]
+
+** mruby知っている人
+*** mruby使っている人
+**** mrubyコミットしている人
+***** mruby倒せる人
+      
+** (PS. 会場質疑内容追加)
+   ruby2は、rubyが主、
+rubyからC言語ライブラリを呼ぶ
+   mrubyは、C言語が主、
+C言語アプリケーション等に組み込む
+
+** mrubyのすべて
+
+   [[http://tatsu-zine.com/books/mruby][組込向けRuby mrubyのすべて総集編]]
+
+* hello mruby world
+
+** skelton
+   cでmrubyの最小構成は
+   
+** 1st step
+   hello world sample
+
+** 2nd step
+   mrb_str_new
+   mrb_func_call
+
+   RSTRING_PTR
+
+** 3rd step
+   mrb_class_get
+
+   mrb->class + - Array
+                - Hash
+                - String
+                - ...
+		  
+   mrb_fixnum
+
+** 4th step
+
+   
+
+** 5th step
+
+
+* hello mirb world
+  で、rubyだけで書いてみると
+** mirb（mruby版irb）で実効
+* 関西Ruby会議05 
+  2013年8月31日(土)
+  
+  たのCいmruby（決定）
+* 終わりに
+** 来週のruby関西は
+*** 組み込みとDiscoveryと私
+**** 初めてのLチカ！
+***** そろそろHaskell使ってもいいですか？
+****** の3本でお送りいたします
+
+
+* ご清聴ありがとうございましたm(_ _)m
