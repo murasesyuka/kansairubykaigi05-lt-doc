@@ -96,13 +96,17 @@
    livecoding的なものをやる予定でした）
    #+END_COMMENT
 
-** 2nd step
-   mrb_str_new
-   mrb_func_call
-
-   RSTRING_PTR
+** 1st fix like mruby
+   
+   [[./sample_hello_mruby/hello_fix1.c][use mrb_str_new()]]
+   
+   | mruby c function | args -> return            |
+   |------------------+---------------------------|
+   | mrb_str_new      | const char* -> mrb_value  |
+   | RSTRING_PTR      | mrb_value ->  char*       |
 
 ** 3rd step
+mrb_func_call
    mrb_class_get
 
    mrb->class + - Array
