@@ -105,9 +105,17 @@
    | mrb_str_new      | const char* -> mrb_value  |
    | RSTRING_PTR      | mrb_value ->  char*       |
 
-** 3rd step
-mrb_func_call
-   mrb_class_get
+** 2nd fix like mruby
+   
+   [[./sample_hello_mruby/hello_fix2.c][mrb_value call method]]
+
+   | mruby c function | args -> return                             |
+   |------------------+--------------------------------------------|
+   | mrb_func_call    | mrb_value,const char*,int,... -> mrb_value |
+
+
+   
+mrb_class_get
 
    mrb->class + - Array
                 - Hash
