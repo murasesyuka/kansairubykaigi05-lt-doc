@@ -50,29 +50,29 @@
 **** mrubyコミットしている人
 ***** mruby倒せる人
 
-      #+BEGIN_COMMENT 会場口頭説明
+      #+BEGIN_VERSE 会場口頭説明
       |                  | 人数                 |
       |------------------+----------------------|
       | 知っている人     | そこそこ             |
       | 使っている人     | 多少したような       |
       | コミットしてる人 | （よく見てなかった） |
       | 倒せる人         | （微笑）             |
-      #+END_COMMENT
+      #+END_VERSE
       
 ** crubyと、mrubyの違いとは
    ruby2は、rubyが主、rubyからC言語ライブラリを呼ぶ
    mrubyは、C言語が主、C言語アプリケーション等に組み込む
 
-   #+BEGIN_COMMENT 会場口頭説明
+   #+BEGIN_VERSE 会場口頭説明
    ruby2が、c拡張からc関数を利用するのにたいして
    cが、libmruby.aをldしてrubyメソッドを利用する感じ
-   #+END_COMMENT
+   #+END_VERSE
 
 ** mrubyのすべて
 
-   #+BEGIN_COMMENT 会場口頭説明
+   #+BEGIN_VERSE 会場口頭説明
    mrubyについて知りたいなら、以下本読め
-   #+END_COMMENT
+   #+END_VERSE
 
    [[http://tatsu-zine.com/books/mruby][組込向けRuby mrubyのすべて総集編]]
 
@@ -80,21 +80,21 @@
    
 ** basic mruby hello world
    
-   #+BEGIN_COMMENT 会場口頭説明
+   #+BEGIN_VERSE 会場口頭説明 会場口頭説明
    （時間がなくなってきたので、
    本家サイトのhelloworldサンプル実行して
    終わりたかったがemacs操作に失敗＞＜）
-   #+END_COMMENT
+   #+END_VERSE
    
    [[./sample_hello_mruby/hello.c][hello world sample]]
 
-   #+BEGIN_COMMENT 会場口頭説明
+   #+BEGIN_VERSE 会場口頭説明
    （時間がなかったので、飛ばしたが
    本来の流れとしては、
    本家helloworldコードを
    mruby_c_apiで置き換えていく
    livecoding的なものをやる予定でした）
-   #+END_COMMENT
+   #+END_VERSE
 
 ** 1st fix like mruby
 
@@ -160,11 +160,11 @@
   
 ** mirb（mruby版irb）で実効
 
-   #+BEGIN_COMMENT 補足
+   #+BEGIN_QUOTE 補足
    なんとなくエムイルブと発音してましたが、
    tweet上では、irbってアイアールビーじゃない？とか
    ミルブのほうが！っとご意見が
-   #+END_COMMENT
+   #+END_QUOTE
    
 * 関西Ruby会議05 
   2013年8月31日(土)
