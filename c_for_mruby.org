@@ -97,6 +97,12 @@
    #+END_COMMENT
 
 ** 1st fix like mruby
+
+   　さて、mruby本家helloworldをmruby c apiを使って
+   書き直してみましょう
+   
+   　まずは、cのchar*を使用しているので、
+   mrubyのStringを使用するように。
    
    [[./sample_hello_mruby/hello_fix1.c][c world get mruby String instance and it make to char* for c]]
    
@@ -106,6 +112,8 @@
    | RSTRING_PTR      | mrb_value ->  char*       |
 
 ** 2nd fix like mruby
+
+   　次は、mrubyのStringなので、sizeで長さを取っちゃうぞ
    
    [[./sample_hello_mruby/hello_fix2.c][mruby instance call method into c world]]
 
@@ -114,12 +122,19 @@
    | mrb_func_call    | mrb_value,const char*,int,... -> mrb_value |
 
 ** 3rd fix like mruby
+
+   　文字列を取得する関数があるのは分かったけど、
+   ArrayとかHashとかユーザ定義クラスが欲しいんだけど
+
+   　そんな貴方に朗報です。
    
    [[./sample_hello_mruby/hello_fix3.c][call String.new into c world]]
    
    | mruby c function | args -> return                |
    |------------------+-------------------------------|
    | mrb_class_get    | const char* -> struct RClass* |
+
+   　ほかにも色々呼び出せます
 
    - mrb->class 
      - Array
@@ -128,15 +143,28 @@
      - ...
 
 ** 4th fix like mruby
+
+   　そろそろ本気だしていいですか by D○C○M○
        
    [[./sample_hello_mruby/hello_fix4.c][String concat to other String]]
 
 
 * hello mirb world
   
-  で、rubyだけで書いてみると
+  　で、mruby c apiで頑張って書いたコードを
+  mrubyだけで書いてみると、あらこんなに簡単に
+
+  #+BEGIN_SRC ruby
+  p "hello" + " world"
+  #+END_SRC
   
 ** mirb（mruby版irb）で実効
+
+   #+BEGIN_COMMENT 補足
+   なんとなくエムイルブと発音してましたが、
+   tweet上では、irbってアイアールビーじゃない？とか
+   ミルブのほうが！っとご意見が
+   #+END_COMMENT
    
 * 関西Ruby会議05 
   2013年8月31日(土)
