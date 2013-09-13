@@ -98,7 +98,7 @@
 
 ** 1st fix like mruby
    
-   [[./sample_hello_mruby/hello_fix1.c][use mrb_str_new()]]
+   [[./sample_hello_mruby/hello_fix1.c][c world get mruby String instance and it make to char* for c]]
    
    | mruby c function | args -> return            |
    |------------------+---------------------------|
@@ -107,15 +107,19 @@
 
 ** 2nd fix like mruby
    
-   [[./sample_hello_mruby/hello_fix2.c][mrb_value call method]]
+   [[./sample_hello_mruby/hello_fix2.c][mruby instance call method into c world]]
 
    | mruby c function | args -> return                             |
    |------------------+--------------------------------------------|
    | mrb_func_call    | mrb_value,const char*,int,... -> mrb_value |
 
-
+** 3rd fix like mruby
    
-mrb_class_get
+   [[./sample_hello_mruby/hello_fix3.c][call String.new into c world]]
+   
+   | mruby c function | args -> return                |
+   |------------------+-------------------------------|
+   | mrb_class_get    | const char* -> struct RClass* |
 
    mrb->class + - Array
                 - Hash
