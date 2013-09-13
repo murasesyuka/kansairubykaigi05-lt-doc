@@ -16,8 +16,8 @@ int main(void)
   mrb_value head = mrb_str_new(mrb,"p 'hello",8);
   mrb_value tail = mrb_str_new(mrb," world'",7);
 
-  str = mrb_funcall(mrb, str, "+", 1, head); /* str += head */
-  str = mrb_funcall(mrb, str, "+", 1, tail); /* str += tail */
+  str = mrb_funcall_argv(mrb, str, mrb_intern2(mrb, "+", 1), 1, &head);
+  str = mrb_funcall_argv(mrb, str, mrb_intern2(mrb, "+", 1), 1, &tail);
 
   printf("str#size is %d \n", mrb_funcall(mrb, str, "size", 0, 0));
   printf("str is '%s' \n", RSTRING_PTR(str));
