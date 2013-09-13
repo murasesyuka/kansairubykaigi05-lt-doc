@@ -121,21 +121,19 @@
    |------------------+-------------------------------|
    | mrb_class_get    | const char* -> struct RClass* |
 
-   mrb->class + - Array
-                - Hash
-                - String
-                - ...
-		  
-   mrb_fixnum
+   - mrb->class 
+     - Array
+     - Hash
+     - String
+     - ...
 
-** 4th step
-
-   
-
-** 5th step
+** 4th fix like mruby
+       
+   [[./sample_hello_mruby/hello_fix4.c][String concat to other String]]
 
 
 * hello mirb world
+  
   で、rubyだけで書いてみると
   
 ** mirb（mruby版irb）で実効
